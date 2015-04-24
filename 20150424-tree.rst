@@ -52,7 +52,16 @@ What the？我把程式重開，特效正常啊？然後又沒了。原來這特
 
 然後發現特效只能用一次的原因了：有個變數 ``alpha`` 用來記錄線條的不透明度，數值越高就越不透明，但是這個值只有加沒有減，啊不就廢話這只能玩一次？這寫完以後到底有沒有測過啊？還是編譯會過就當成沒問題了？
 
-順帶一提，根據 `Java 的 Spec`_ ， ``0.0`` 這種常數在 Java 裡面預設的型態是 ``float`` ，我真的不知道 ``float alpha=0.0;`` 到底是怎麼編譯過的。
+順帶一提，根據 `Java 的 Spec`_ ， ``0.0`` 這種常數在 Java 裡面預設的型態是 ``double`` ，我真的不知道 ``float alpha=0.0;`` 到底是怎麼編譯過的。
 
 ..  _Java 的 Spec: http://docs.oracle.com/javase/specs/jls/se7/html/jls-3.html#jls-3.10.2
+
+裡面的其中一段 Code ::
+
+ for(int v=2;v<16;v++) {
+
+       if(local_level == v) {
+          can[v-2].alpha++;
+      }
+ }
 
