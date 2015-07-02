@@ -19,5 +19,6 @@ Cychih 2015/04/24 @ NCTU
 * `20150415 - 「在『每個』系統上更新老師的學術著作」真的是我應該做的事嗎？ <20150415-updating_profs_essays_information.rst>`_
 * `20150424 - 永生樹 <20150424-tree.rst>`_
 * `20150512 - Trace Code <20150512-trace-code.rst>`_
+* `20150514 - 好長的 URL <20150514-long-long-long-long-url.rst>`_
 * `20150702 - 先 Work Around 再說 <20150702-work-around-localhost.rst>`_
 
