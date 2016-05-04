@@ -24,3 +24,8 @@ Server 的效能並不是非常好，根據我的測試，150 ~ 300 ms 是它的
 
 那支 Client 每 50 毫秒就會發出一個 HTTP Request，URL 的長度有 3155 個字元，我從來沒看過那麼長的 URL XDDD
 
+----
+
+後來發現其實資料量不是 1024 bytes，而是 4096 bytes
+
+最近 Spec 改了，這些資料會用 PUT 傳，不再用 GET
